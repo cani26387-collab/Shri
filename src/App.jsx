@@ -18,13 +18,13 @@ function App() {
   };
 
   return (
-    <div className="h-screen flex flex-col bg-gradient-to-br from-pink-200 via-purple-200 to-pink-300 relative overflow-hidden">
+    <div className="app-container">
 
       <FloatingElements />
 
       <Navbar />
 
-      <div className="flex-1 min-h-0 overflow-hidden">
+      <main className="app-content">
 
         {!showQuestion && !showFinal && (
           <Frame
@@ -49,7 +49,8 @@ function App() {
           <FinalScreen onReplay={replay} />
         )}
 
-      </div>
+      </main>
+
     </div>
   );
 }

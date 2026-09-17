@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import celebrationVideo from "../assets/images/shri.mp4";
+import celebrationVideo from "../assets/images/shri4.mp4";
 
 const FinalScreen = ({ onReplay }) => {
   const videoRef = useRef(null);
